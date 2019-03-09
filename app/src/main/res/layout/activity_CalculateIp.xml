@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".welcomePage.other.otherPage.CalculateIp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/enterIPTextView_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Enter IP:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/enterIPEditText_other_calcip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/enterIPTextView_other_calcip"
+                android:layout_toRightOf="@id/enterIPTextView_other_calcip"
+                android:digits="0123456789."
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/enterMaskTextView_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/enterIPTextView_other_calcip"
+                android:layout_marginTop="20dp"
+                android:text="Enter Mask:"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/calcip_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/enterIPEditText_other_calcip"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/enterMaskTextView_other_calcip">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/calcButton_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/enterIPEditText_other_calcip"
+                android:text="CALC"
+                android:onClick="calculateIP"/>
+
+            <TextView
+                android:id="@+id/addressip_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enterMaskTextView_other_calcip"
+                android:layout_marginTop="20dp"
+                android:text="Address IP:" />
+
+            <TextView
+                android:id="@+id/addressipSHOW_other_calcip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enterMaskTextView_other_calcip"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/addressip_other_calcip"
+                android:layout_toRightOf="@id/addressip_other_calcip"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/mask_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressip_other_calcip"
+                android:text="Mask:" />
+
+            <TextView
+                android:id="@+id/maskSHOW_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressip_other_calcip"
+                android:layout_toEndOf="@id/mask_other_calcip"
+                android:layout_toRightOf="@id/mask_other_calcip" />
+
+            <TextView
+                android:id="@+id/networkaddress_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mask_other_calcip"
+                android:text="Network address:" />
+
+            <TextView
+                android:id="@+id/networkaddressSHOW_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mask_other_calcip"
+                android:layout_toEndOf="@id/networkaddress_other_calcip"
+                android:layout_toRightOf="@id/networkaddress_other_calcip" />
+
+            <TextView
+                android:id="@+id/broadcast_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/networkaddress_other_calcip"
+                android:text="Broadcast address:" />
+
+            <TextView
+                android:id="@+id/broadcastSHOW_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/networkaddress_other_calcip"
+                android:layout_toEndOf="@id/broadcast_other_calcip"
+                android:layout_toRightOf="@id/broadcast_other_calcip" />
+
+            <TextView
+                android:id="@+id/numbofhosts_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/broadcast_other_calcip"
+                android:text="Number of hosts:" />
+
+            <TextView
+                android:id="@+id/numbofhostsSHOW_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/broadcast_other_calcip"
+                android:layout_toEndOf="@id/numbofhosts_other_calcip"
+                android:layout_toRightOf="@id/numbofhosts_other_calcip" />
+
+            <TextView
+                android:id="@+id/hostmin_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numbofhosts_other_calcip"
+                android:text="Min host:" />
+
+            <TextView
+                android:id="@+id/hostminSHOW_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numbofhosts_other_calcip"
+                android:layout_toEndOf="@id/hostmin_other_calcip"
+                android:layout_toRightOf="@id/hostmin_other_calcip" />
+
+            <TextView
+                android:id="@+id/hostmax_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hostmin_other_calcip"
+                android:text="Max host:" />
+
+            <TextView
+                android:id="@+id/hostmaxSHOW_other_calcip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hostmin_other_calcip"
+                android:layout_toEndOf="@id/hostmax_other_calcip"
+                android:layout_toRightOf="@id/hostmax_other_calcip" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

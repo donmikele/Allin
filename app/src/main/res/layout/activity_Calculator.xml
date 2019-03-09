@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.allin.welcomePage.Calculator">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/windowTextView_calc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#f2f2f2"
+                android:text="Test"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/windowTextView_calc">
+
+
+                <!-- TOP MENU -->
+                <LinearLayout
+                    android:id="@+id/horizontalButtons_calc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/windowTextView_calc"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingTop="5.0dip">
+
+                    <Button
+                        android:id="@+id/clearButton_calc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:text="C"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/divButton_calc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:text="÷"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/mulButton_calc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:text="x"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/removeButton_calc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:text="☒"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                </LinearLayout>
+
+
+                <!-- CENTER MENU 1st -->
+                <LinearLayout
+                    android:id="@+id/center1stLayout_calc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/horizontalButtons_calc"
+                    android:layout_toLeftOf="@id/verticalButtons_calc"
+                    android:layout_toStartOf="@id/verticalButtons_calc"
+                    android:paddingBottom="0.0dip"
+                    android:paddingEnd="0.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="0.0dip"
+                    android:paddingStart="4.0dip"
+                    android:paddingTop="0.0dip">
+
+                    <Button
+                        android:id="@+id/sevenButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="7"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/eightButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="8"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/nineButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="9"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+
+                </LinearLayout>
+
+
+                <!-- CENTER MENU 2nd -->
+                <LinearLayout
+                    android:id="@+id/center2ndLayout_calc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/center1stLayout_calc"
+                    android:layout_toLeftOf="@id/verticalButtons_calc"
+                    android:layout_toStartOf="@id/verticalButtons_calc"
+                    android:paddingBottom="0.0dip"
+                    android:paddingEnd="0.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="0.0dip"
+                    android:paddingStart="4.0dip"
+                    android:paddingTop="0.0dip">
+
+                    <Button
+                        android:id="@+id/fourButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="4"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/fiveButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="5"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/sixButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="6"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+
+                </LinearLayout>
+
+
+                <!-- CENTER MENU 3rd -->
+                <LinearLayout
+                    android:id="@+id/center3rdLayout_calc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/center2ndLayout_calc"
+                    android:layout_toLeftOf="@id/verticalButtons_calc"
+                    android:layout_toStartOf="@id/verticalButtons_calc"
+                    android:paddingBottom="0.0dip"
+                    android:paddingEnd="0.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="0.0dip"
+                    android:paddingStart="4.0dip"
+                    android:paddingTop="0.0dip">
+
+                    <Button
+                        android:id="@+id/oneButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="1"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/twoButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="2"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/threeButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="3"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+
+                </LinearLayout>
+
+
+                <!-- CENTER MENU 4th -->
+                <LinearLayout
+                    android:id="@+id/center4thLayout_calc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/center3rdLayout_calc"
+                    android:layout_toLeftOf="@id/verticalButtons_calc"
+                    android:layout_toStartOf="@id/verticalButtons_calc"
+                    android:paddingBottom="0.0dip"
+                    android:paddingEnd="0.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="0.0dip"
+                    android:paddingStart="4.0dip"
+                    android:paddingTop="0.0dip">
+
+                    <Button
+                        android:id="@+id/zeroButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="0"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/commaButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text=","
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/plusminusButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="±"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+
+                </LinearLayout>
+
+
+                <!-- RIGHT MENU -->
+                <LinearLayout
+                    android:id="@+id/verticalButtons_calc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/horizontalButtons_calc"
+                    android:orientation="vertical"
+                    android:paddingBottom="0.0dip"
+                    android:paddingLeft="0.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingTop="0.0dip">
+
+
+                    <Button
+                        android:id="@+id/subButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0"
+                        android:text="-"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/addButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0"
+                        android:text="+"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/bracketsButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0"
+                        android:text="()"
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+                    <Button
+                        android:id="@+id/resultButton_calc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0"
+                        android:text="="
+                        android:textSize="@dimen/textsizeButton_calc" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.allin.main.MainActivityImpl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/bmi_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/calculate_your_bmi"
+                android:onClick="openBmi"
+                android:src="@drawable/bmi_small" />
+
+            <TextView
+                android:id="@+id/bmi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_toEndOf="@id/bmi_ico"
+                android:layout_toRightOf="@id/bmi_ico"
+                android:onClick="openBmi"
+                android:text="@string/calculate_your_bmi" />
+
+            <ImageView
+                android:id="@+id/calc_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bmi_ico"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/two_numbers_calculator"
+                android:onClick="openCalculator"
+                android:src="@drawable/calc_small" />
+
+            <TextView
+                android:id="@+id/calc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bmi_text"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_toEndOf="@id/calc_ico"
+                android:layout_toRightOf="@id/calc_ico"
+                android:onClick="openCalculator"
+                android:text="@string/two_numbers_calculator" />
+
+            <ImageView
+                android:id="@+id/other_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calc_ico"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/other"
+                android:onClick="openOther"
+                android:src="@drawable/another_small" />
+
+            <TextView
+                android:id="@+id/other_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calc_text"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_toEndOf="@id/other_ico"
+                android:layout_toRightOf="@id/other_ico"
+                android:onClick="openOther"
+                android:text="@string/other" />
+
+            <TextView
+                android:id="@+id/copyright_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/copyright" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

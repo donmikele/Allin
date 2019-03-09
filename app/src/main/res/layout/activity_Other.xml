@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.android.allin.welcomePage.OtherImpl">
+
+
+    <TextView
+        android:id="@+id/notepadTextView_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.    Notepad"
+        android:textSize="20sp"
+        android:onClick="openNotepad" />
+
+    <TextView
+        android:id="@+id/yournotesTextView_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.    Your notes"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/notepadTextView_other"
+        android:onClick="openYourNotes"/>
+
+    <TextView
+        android:id="@+id/calcipTextView_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.    Calculate IP"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/yournotesTextView_other"
+        android:onClick="openCalculateIp"/>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.allin">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.MainActivityImpl">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".welcomePage.Bmi"
+            android:label="Allin - BMI"
+            android:parentActivityName=".main.MainActivityImpl"
+            tools:targetApi="jelly_bean" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".main.MainActivityImpl" />
+
+        <activity
+            android:name=".welcomePage.Calculator"
+            android:label="Allin - CALC"
+            android:parentActivityName=".main.MainActivityImpl"
+            tools:targetApi="jelly_bean" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".main.MainActivityImpl" />
+
+        <activity
+            android:name=".welcomePage.OtherImpl"
+            android:label="Allin - Other"
+            android:parentActivityName=".main.MainActivityImpl"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.MainActivityImpl" />
+        </activity>
+        <activity
+            android:name=".welcomePage.other.otherPage.Notepad"
+            android:label="Allin - Other - Notepad"
+            android:parentActivityName=".welcomePage.OtherImpl"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".welcomePage.OtherImpl" />
+        </activity>
+        <activity
+            android:name=".welcomePage.other.otherPage.YourNotes"
+            android:label="Allin - Other - Your notes"
+            android:parentActivityName=".welcomePage.OtherImpl"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".welcomePage.OtherImpl" />
+        </activity>
+        <activity
+            android:name=".welcomePage.other.otherPage.CalculateIp"
+            android:label="Allin - Other - Calculate IP"
+            android:parentActivityName=".welcomePage.OtherImpl"
+            tools:targetApi="jelly_bean">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".welcomePage.OtherImpl" />
+        </activity>
+    </application>
+
+</manifest>
