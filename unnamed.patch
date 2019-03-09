@@ -1,0 +1,59 @@
+Index: app/src/main/java/com/example/android/allin/welcomePage/OtherImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/android/allin/welcomePage/OtherImpl.java	(date 1552091406000)
++++ app/src/main/java/com/example/android/allin/welcomePage/OtherImpl.java	(date 1552091406000)
+@@ -0,0 +1,36 @@
++package com.example.android.allin.welcomePage;
++
++import android.content.Intent;
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++import android.view.View;
++
++import com.example.android.allin.R;
++import com.example.android.allin.welcomePage.Other;
++import com.example.android.allin.welcomePage.other.otherPage.CalculateIp;
++import com.example.android.allin.welcomePage.other.otherPage.Notepad;
++import com.example.android.allin.welcomePage.other.otherPage.YourNotes;
++
++public class OtherImpl extends AppCompatActivity implements Other {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_other);
++    }
++
++    public void openNotepad(View view) {
++        Intent intent = new Intent(this, Notepad.class);
++        startActivity(intent);
++    }
++
++    public void openYourNotes(View view) {
++        Intent intent = new Intent(this,YourNotes.class);
++        startActivity(intent);
++    }
++
++    public void openCalculateIp(View view) {
++        Intent intent = new Intent(this,CalculateIp.class);
++        startActivity(intent);
++    }
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1552091496000)
++++ .idea/vcs.xml	(date 1552091496000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
