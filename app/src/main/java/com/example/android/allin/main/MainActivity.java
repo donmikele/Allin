@@ -1,7 +1,7 @@
 package com.example.android.allin.main;
 
 import android.view.View;
-/* git refactor */
+
 public interface MainActivity {
 
     void openBmi(View view) ;
